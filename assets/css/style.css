@@ -1,0 +1,192 @@
+body * {
+    font-family: 'Cabin', sans-serif;
+    color: #262626;
+}
+
+/* navbar & footer */
+
+nav {
+    padding: 0!important;
+}
+
+.navbar, footer {
+    color: white;
+    font-family: 'Lobster', cursive;
+    text-decoration: none!important;
+}
+
+.nav-link {
+    font-family: 'Cabin', regular;
+    color: white;
+}
+
+footer h3 {
+    color: white;
+    font-family: 'Lobster', cursive;
+}
+
+/* Ricomida title size */
+
+.icon {
+    font-size: 37px;
+    padding: 0;
+}
+
+/* Responsive menu color */
+
+.navbar-toggler {
+    border-color: gray;
+}
+
+.fa-bars {
+    color: gray;
+}
+
+/* Header */
+
+header {
+    padding-top: 2.2rem!important;
+}
+
+.row__pizza {
+    border-bottom: 1.5px solid #262626;
+}
+
+.btn-light {
+    border-color: #FBFBFB;
+    outline-color: white;
+}
+
+.row__img__pizza {
+    border-bottom: 1.5px solid #262626;
+}
+
+/*Estilo carousel*/
+
+.carousel-indicators li {
+    top: 60px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background-color: var(--light);
+}
+
+.carousel-indicators .active {
+    background-color: var(--dark);
+}
+
+/*Estilo recipeSection*/
+
+.rowRecipe {
+    border-bottom: 1.5px solid var(--dark);
+    padding-bottom: 60px;
+}
+
+.recipe li {
+    list-style: none;
+    font-size: 20px;
+}
+
+.ingredients, .preparation {
+    display: inline-block;
+    border-bottom: 1.5px solid var(--dark);
+}
+
+/*Estilo sección relatedRecipes*/
+
+/*Estilo sección newsletter*/
+
+#newsletterSection {
+    background-color: var(--danger);
+    padding: 6rem 0;
+}
+
+.newsletter * {
+    color: var(--white);
+}
+
+.newsletterSection .container h3 {
+    font-size: 30px;
+}
+
+span {
+    font-family: 'Lobster', cursive;
+}
+
+.btn-danger {
+    border-color: var(--light);
+    color: var(--white);
+    padding: 5px 70px;
+}
+
+/*Media queries*/
+
+@media screen and (max-width:576px) {
+    /*header*/
+    .row__img__pizza {
+        border-top: 1.5px solid var(--dark);
+    }
+    h1 {
+        font-size: 25px;
+        text-align: center;
+    }
+    header h5 {
+        text-align: center;
+        font-size: 16px;
+    }
+    .buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        /* width: 50%; */
+    }
+    .btn-light {
+        width: 112px;
+        height: 40px;
+        font-size: 13px;
+        padding: auto;
+    }
+    /*Sección recipe*/
+    .recipe .row {
+        margin-top: 30px;
+    }
+    .recipe .row * {
+        font-size: 16px;
+    }
+    .rowRecipe {
+        padding-bottom: 23px;
+    }
+    .ingredients, .preparation {
+        border-bottom: 0;
+        margin: auto;
+    }
+    /*Sección relatedRecipes*/
+    #relatedRecipes h2 {
+        font-size: 25px;
+    }
+    .card-title {
+        font-size: 17px;
+    }
+    /*Sección newsletter*/
+    #newsletterSection h2 {
+        font-size: 30px;
+    }
+    #newsletterSection h4 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width:577px) {
+    .row_recipe {
+        border-top: 1.5px solid var(--dark);
+    }
+}
+
+.change__color {
+    color: #262626;
+}
+
+.change_red {
+    color: red;
+  }
