@@ -43,7 +43,7 @@ $(document).ready(function () {
     $("#enviarFav").click(function () {
         var section_alert = $('#myalert');
 
-        var nodo = `<div class="container-fluid bg-danger alert alert-warning alert-dismissible fade show text-center" role="alert" style="width: 300px;">
+        var nodo = `<div class="container-fluid bg-danger alert alert-warning alert-dismissible fade show text-center" role="alert" style="width: 18.75rem;">
       <strong class="text-white">Añadido a favoritos correctamente...</strong>
       <button type="button" class="close" data-dismiss="alert" aria-label="Close">
         <span aria-hidden="true">&times;</span>
