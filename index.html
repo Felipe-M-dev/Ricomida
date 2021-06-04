@@ -19,7 +19,7 @@
 
 <body>
     <!--Navbar Ricomida-->
-    <nav class="navbar navbar-expand-lg fixed-top mb-4 p-0 bg-dark">
+    <nav class="navbar navbar-expand-lg p-1 navbar-dark gray_color fixed-top">
         <div class="container pl-3">
             <a class="icon navbar ml-3" href="#home">Ricomida</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
@@ -52,97 +52,90 @@
         <div class="container">
             <div class="row">
                 <div class="pizza col-md-12 col-lg-6 pt-3">
-                    <img class="row__img__pizza img-fluid pt-3 pt-md-0 px-0" src="assets/img/principal.jpg"
-                        alt="Icono del sitio" />
+                    <img class="row__img__pizza img-fluid pt-3 pt-md-0 px-0 float-right" src="assets/img/principal.jpg"
+                        alt="Pizza" />
                 </div>
                 <div class="col-lg-6 pt-2">
                     <div class="container">
                         <div class="row row__pizza">
-                            <div class="col-md-12 col-lg-10 px-0">
+                            <div class="col-md-12 col-lg-8 col-sm-12 text-lg-left text-center px-0">
                                 <h1 class="font-weight-bold p-3 pt-md-5 pb-md-4 pl-lg-0">PIZZA AL ESTILO CHICAGO CON
                                     ESPINACAS Y CHAMPIÑONES</h1>
                             </div>
-
                             <div class="col-lg-2 pr-0">
                             </div>
                         </div>
                     </div>
-
                     <div class="my-1 ml-0 px-0">
                         <h5 class="font-weight-bold py-3">110 MIN / 6 A 8 PORCIONES</h5>
 
-                        <div class="buttons container pl-0">
-                            <button type="button" class="btn btn-ligth btn-outline-secondary py-2 px-1"
+                        <div class="container-fluid pl-0">
+                            <button type="button"
+                                class="btn btn-ligth btn-outline-secondary py-2 px-1 mr-1 d-inline-block btn-size"
                                 data-toggle="tooltip" data-placement="bottom" title="Presiona para enviar a tu correo"
-                                id="btn_mail">Enviar por correo</button>
-                            <button type="button" class="btn btn-ligth btn-outline-secondary py-2 px-1 button-margin"
-                                data-toggle="tooltip" data-placement="right"
-                                title="Agrega esta receta a tus favoritos">Añadir a favoritos</button>
+                                id="enviarCorreo">Enviar por correo</button>
+                            <button type="button"
+                                class="btn btn-ligth btn-outline-secondary py-2 px-1 button-margin ml-1 d-inline-block"
+                                data-toggle="tooltip" data-placement="right" title="Agrega esta receta a tus favoritos"
+                                id="enviarFav">Añadir a favoritos</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <section id="myalert" class="mt-3">
-
         </section>
     </header>
 
     <!--Carousel-->
-    <section id="carouselSection" class="my-5 pt-3 d-none d-sm-block pb-5">
-        <div class="container">
-            <div id="gallery" class="carousel slide mb-5" data-ride="carousel">
-
-                <ol class="carousel-indicators ">
-                    <li data-target="#gallery" data-slide-to="0 " class="active"></li>
-                    <li data-target="#gallery" data-slide-to="1 "></li>
-                </ol>
-
-                <div class="carousel-inner">
-
-                    <div class="carousel-item active text-center ">
-                        <div class="row ">
-                            <div class="col ">
-                                <img class="img-fluid " src="assets/img/slider-1.png" alt="Imagen 1 Carousel" />
-                            </div>
-                            <div class="col ">
-                                <img class="img-fluid " src="assets/img/slider-2.png" alt="Imagen 2 Carousel" />
-                            </div>
-                            <div class="col ">
-                                <img class="img-fluid " src="assets/img/slider-3.png" alt="Imagen 3 Carousel" />
-                            </div>
-                            <div class="col ">
-                                <img class="img-fluid " src="assets/img/slider-4.png" alt="Imagen 4 Carousel" />
-                            </div>
+    <div class="container-fluid col-md-12 col-lg-9 col-sm-12 my-5 pt-3 d-none d-sm-block pb-5">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner text-center">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-3">
+                            <img class="img-fluid " src="assets/img/slider-1.png" alt="Carousel img 1" />
+                        </div>
+                        <div class="col-3">
+                            <img class="img-fluid " src="assets/img/slider-2.png" alt="Carousel img 2" />
+                        </div>
+                        <div class="col-3">
+                            <img class="img-fluid " src="assets/img/slider-3.png" alt="Carousel img 3" />
+                        </div>
+                        <div class="col-3">
+                            <img class="img-fluid " src="assets/img/slider-4.png" alt="Carousel img 4" />
                         </div>
                     </div>
-
-                    <div class="carousel-item text-center ">
-                        <div class="row ">
-                            <div class="col ">
-                                <img class="img-fluid" src="assets/img/slider-5.png" alt="Imagen 5 Carousel" />
-                            </div>
-                            <div class="col ">
-                                <img class="img-fluid" src="assets/img/slider-6.png" alt="Imagen 6 Carousel" />
-                            </div>
-                            <div class="col ">
-                                <img class="img-fluid" src="assets/img/slider-7.png" alt="Imagen 7 Carousel" />
-                            </div>
-                            <div class="col ">
-                                <img class="img-fluid" src="assets/img/slider-8.png" alt="Imagen 8 Carousel" />
-                            </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-3">
+                            <img class="img-fluid " src="assets/img/slider-5.png" alt="Carousel img 5" />
+                        </div>
+                        <div class="col-3">
+                            <img class="img-fluid " src="assets/img/slider-6.png" alt="Carousel img 6" />
+                        </div>
+                        <div class="col-3">
+                            <img class="img-fluid " src="assets/img/slider-7.png" alt="Carousel img 7" />
+                        </div>
+                        <div class="col-3">
+                            <img class="img-fluid " src="assets/img/slider-8.png" alt="Carousel img 8" />
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <!--Ingredientes y preparación-->
-    <section id="recipeSection" class="recipe px-5">
+    <!--Ingredients and preparation-->
+    <section id="recipe_section" class="recipe">
         <div class="container">
             <div class="row_recipe row pt-4">
-                <div class="col-md-6 text-left">
+                <div class="col-md-6 text-left col-sm-12">
                     <div class="ingredients mb-4">
                         <h3 class="font-weight-bold change__color">INGREDIENTES</h3>
                     </div>
@@ -178,12 +171,12 @@
                     </ul>
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-md-6 col-sm-12">
                     <div class="preparation my-4 mb-md-4 mt-md-0">
-                        <h3 class="font-weight-bold change__color">PREPARACIÓN</h3>
+                        <h3 class="font-weight-bold change__color1">PREPARACIÓN</h3>
                     </div>
                     <ul class="pl-0">
-                        <li> Para la masa, disolver la levadura y el azúcar en agua tibia en un bol grande. Dejar
+                        <li>1. Para la masa, disolver la levadura y el azúcar en agua tibia en un bol grande. Dejar
                             reposar 2 minutos. Agregar el aceite, la harina de maíz, sal y 400gr de harina. Mezclar
                             bien. Amasar y agregar el resto de harina, la cantidad
                             necesaria para tener una masa blanda. Poner en el mesón y amasar por 5 minutos o hasta tener
@@ -193,25 +186,28 @@
                             duplique su volumen (leudar). Golpear la masa para que baje y luego dejar leudar por 40
                             minutos adicionales. </li><br>
 
-                        <li> Mientras tanto preparar la salsa: Calentar 4 cucharadas de aceite en una olla a fuego
+                        <li>2. Mientras tanto preparar la salsa: Calentar 4 cucharadas de aceite en una olla a fuego
                             medio. Agregar la cebolla, Orégano Gourmet, Albahaca Gourmet, sal y cocinar hasta que la
                             cebolla esté dorada. Agregar el ajo y cocinar por 30
                             segundos. Agregar los tomates junto al jugo del tarro, a la mezcla de cebolla. Agregar el
                             azúcar y cocinar hasta que la mezcla se haya reducido y espesado, como 30 minutos. Sazonar
                             con sal y pimienta a gusto. Reservar.</li><br>
 
-                        <li>Relleno: Cocinar las chalotas en el aceite de oliva hasta que estén transparentes. Agregar
+                        <li>3. Relleno: Cocinar las chalotas en el aceite de oliva hasta que estén transparentes.
+                            Agregar
                             los champiñones y las espinacas, cocinar hasta que estén cocidos y se haya evaporado todo el
                             líquido que hayan votado los vegetales. Reservar.</li>
 
-                        <li> Calentar el horno a 220C. </li><br>
+                        <li>4. Calentar el horno a 220C. </li><br>
 
-                        <li>Una vez que la masa haya reposado, dividirla en dos bolas. Estirar cada masa para cubrir dos
+                        <li>5. Una vez que la masa haya reposado, dividirla en dos bolas. Estirar cada masa para cubrir
+                            dos
                             moldes (desmontables) de 26 cm, hacer un borde de 5 cm con la masa. Dividir el relleno entre
                             las dos pizza, tapar con el queso mozarella,
                             luego terminar con la salsa de tomates y finalmente espolvorear el queso rallado.</li><br>
 
-                        <li>Hornear por 35 a 40 minutos o hasta que el relleno esté caliente y la base esté esponjosa y
+                        <li>6. Hornear por 35 a 40 minutos o hasta que el relleno esté caliente y la base esté esponjosa
+                            y
                             dorada. Esperar unos minutos antes de desmoldar.</li>
                     </ul>
                 </div>
@@ -219,36 +215,39 @@
         </div>
     </section>
 
-    <!--Recetas relacionadas-->
+    <!--Related recipes-->
     <section id="Recipes" class="container text-center mt-4 mb-0 mb-md-5 pb-2 pb-md-5 px-4">
         <h2 class="cards font-weight-bold mb-5">RECETAS RELACIONADAS</h2>
         <div class="row row-cols-1 row-cols-md-2">
             <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="assets/img/recipe-card-1.png" class="card-img-top" alt="Imagen Panqueques">
+                <div class="card" id="card-toggle1">
+                    <img id="img_toggle1" src="assets/img/recipe-card-1.png" class="card-img-top" alt="Panqueques">
                     <div class="card-body text-left">
                         <h5 class="card-title font-weight-bold">PANQUEQUES CON MANJAR Y CREMA</h5>
-                        <p class="card-text">Mus enim elementum dignissim class eleifend justo, ut nunc magnis est
-                            vulputate nostra, blandit erat luctus faucibus orci.</p>
+                        <p id="p_text1" class="card-text">Mus enim elementum dignissim class eleifend justo, ut nunc
+                            magnis est
+                            vulputate nostra, blandit erat luctus</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
                 <div class="card">
-                    <img src="assets/img/recipe-card-2.png" class="card-img-top" alt="Imagen Panqueques">
+                    <img id="img_toggle2" src="assets/img/recipe-card-2.png" class="card-img-top" alt="Tiramisu">
                     <div class="card-body text-left">
-                        <h5 class="card-title font-weight-bold">TIRAMISÚ</h5>
-                        <p class="card-text">Congue fermentum dignissim rhoncus elementum ac nisi, proin phasellus
+                        <h5 class="card-title font-weight-bold" id="card-toggle2">TIRAMISÚ</h5>
+                        <p id="p_text2" class="card-text">Congue fermentum dignissim rhoncus elementum ac nisi, proin
+                            phasellus
                             lacinia sed faucibus mauris, taciti scelerisque nulla ornare consequat.</p>
                     </div>
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="card">
-                    <img src="assets/img/recipe-card-3.png" class="card-img-top" alt="Imagen Panqueques">
+                <div class="card" id="card-toggle3">
+                    <img id="img_toggle3" src="assets/img/recipe-card-3.png" class="card-img-top" alt="Plateada">
                     <div class="card-body text-left">
                         <h5 class="card-title font-weight-bold">PLATEADA</h5>
-                        <p class="card-text">Cubilia elementum posuere arcu rhoncus egestas lectus, diam aliquam laoreet
+                        <p id="p_text3" class="card-text">Cubilia elementum posuere arcu rhoncus egestas lectus, diam
+                            aliquam laoreet
                             ac eleifend risus, urna auctor inceptos mattis dapibus.</p>
                     </div>
                 </div>
@@ -256,25 +255,25 @@
         </div>
     </section>
 
-    <!--Newsletter-->
-    <section id="us" class="us">
+    <!--Suscribe Newsletter-->
+    <section id="us" class="us bg-danger p-5">
         <div class="container text-center py-sm-3 py-md-5">
-            <h2 class="font-weight-bold mb-2">SUSCRÍBETE EN NUESTRO NEWSLETTER</h2>
-            <h4>y obtén las mejores recetas que tenemos en <span>Ricomida</span></h4>
-
-            <div class="text-center mt-5">
-                <button type="button" class="btn btn-danger" data-toggle="tooltip" data-placement="right"
-                    title="Presiona para suscribirte">Empezar</button>
+            <h2 class="font-weight-bold text-white mb-2">SUSCRÍBETE EN NUESTRO NEWSLETTER</h2>
+            <h4 class=" text-white">y obtén las mejores recetas que tenemos en <span class="text-white">Ricomida</span>
+            </h4>
+            <div class="text-center my-5">
+                <button type="button" class="btn btn-danger btn-outline-light text-white py-2 px-5"
+                    data-toggle="tooltip" data-placement="right" title="Presiona para suscribirte">Empezar</button>
             </div>
         </div>
     </section>
 
-    <!--footer (pie de página)-->
+    <!--Footer-->
     <footer id="contact" class="py-4 bg-dark">
         <h3 class="icon text-center">Ricomida</h3>
     </footer>
 
-    <!--JQuery sin slim, minificado-->
+    <!--JQuery min JS-->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
@@ -288,10 +287,10 @@
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
 
-
-    <!-- Mis scripts-->
+    <!-- My scripts-->
     <script src="assets/js/script.js">
     </script>
+
 </body>
 
 </html>
