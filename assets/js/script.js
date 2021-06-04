@@ -54,20 +54,21 @@ $(document).ready(function () {
     });
 });
 
-/* Change color text */
+/* Change color text JQuery 'on' method */
 
-let change = document.querySelector(".change__color")
-let change1 = document.querySelector(".change__color1")
+$(document).ready(function () {
+    $("#preparation__change").on("dblclick", function () {
+        $(this).toggleClass("change__red");
+    });
+});
 
-change.addEventListener("dblclick", () => {
-    change.classList.toggle("change__red")
-})
+$(document).ready(function () {
+    $("#ingredients__change").on("dblclick", function () {
+        $(this).toggleClass("change__red");
+    });
+});
 
-change1.addEventListener("dblclick", () => {
-    change1.classList.toggle("change__red")
-})
-
-/* JQuery Toggle */
+/* JQuery 'toggle' method */
 
 $(document).ready(function () {
     $("#card-toggle1").click(function () {

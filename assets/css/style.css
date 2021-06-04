@@ -25,11 +25,15 @@ footer h3 {
     font-family: 'Lobster', cursive;
 }
 
-/* Ricomida title size */
+/* Ricomida title size and gray hover */
 
 .icon {
     font-size: 2.3125rem;
     padding: 0;
+}
+
+.icon:hover {
+    color: gray;
 }
 
 /* Responsive menu color */
@@ -102,14 +106,6 @@ header {
 
 /* Related recipes change color text */
 
-.change__color {
-    color: #262626;
-}
-
-.change__color1 {
-    color: #262626;
-}
-
 .change__red {
     color: red;
 }
@@ -122,4 +118,8 @@ header {
 
 span {
     font-family: 'Lobster', cursive;
+}
+
+.us button {
+    border-color: white;
 }

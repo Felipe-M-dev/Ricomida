@@ -5,19 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ricomida</title>
+    <meta name="Description" content="Sitio de Ricomida">
+    <meta name="author" content="Felipe Martinez">
+    <meta name="keyword" content="ricomida,rico,comida">
     <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
-
     <!--CSS Bootstrap-->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-
     <!--Google Fonts Cabin and Lobster-->
     <link href="https://fonts.googleapis.com/css?family=Cabin:400,700|Lobster&display=swap" rel="stylesheet" />
-
     <!--My CSS style-->
     <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 
 <body>
+
     <!--Navbar Ricomida-->
     <nav class="navbar navbar-expand-lg p-1 navbar-dark gray_color fixed-top">
         <div class="container pl-3">
@@ -26,7 +27,6 @@
                 ariacontrols="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse mr-3" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
@@ -45,7 +45,6 @@
             </div>
         </div>
     </nav>
-
 
     <!--Header-->
     <header id="home" class="pt-2 pt-md-4 mt-5 mx-auto">
@@ -68,7 +67,6 @@
                     </div>
                     <div class="my-1 ml-0 px-0">
                         <h5 class="font-weight-bold py-3">110 MIN / 6 A 8 PORCIONES</h5>
-
                         <div class="container-fluid pl-0">
                             <button type="button"
                                 class="btn btn-ligth btn-outline-secondary py-2 px-1 mr-1 d-inline-block btn-size"
@@ -137,7 +135,7 @@
             <div class="row_recipe row pt-4">
                 <div class="col-md-6 text-left col-sm-12">
                     <div class="ingredients mb-4">
-                        <h3 class="font-weight-bold change__color">INGREDIENTES</h3>
+                        <h3 id="ingredients__change" class="font-weight-bold">INGREDIENTES</h3>
                     </div>
                     <ul class="pl-0">
                         <li>Masa</li>
@@ -151,7 +149,6 @@
                         <li>2 cucharaditas de sal</li>
                         <li>625 gr harina</li>
                     </ul>
-
                     <ul class="pl-0">
                         <li>Salsa</li>
                         <br>
@@ -163,17 +160,15 @@
                         <li>2 tarro de tomates en cubos al natural</li>
                         <li>2 cucharaditas de azúcar</li>
                     </ul>
-
                     <ul class="pl-0">
                         <li>Relleno</li>
                         <br>
                         <li>1/2 cebolla, en cubos</li>
                     </ul>
                 </div>
-
                 <div class="col-md-6 col-sm-12">
                     <div class="preparation my-4 mb-md-4 mt-md-0">
-                        <h3 class="font-weight-bold change__color1">PREPARACIÓN</h3>
+                        <h3 id="preparation__change" class="font-weight-bold change__color1">PREPARACIÓN</h3>
                     </div>
                     <ul class="pl-0">
                         <li>1. Para la masa, disolver la levadura y el azúcar en agua tibia en un bol grande. Dejar
@@ -220,10 +215,10 @@
         <h2 class="cards font-weight-bold mb-5">RECETAS RELACIONADAS</h2>
         <div class="row row-cols-1 row-cols-md-2">
             <div class="col-md-4 mb-4">
-                <div class="card" id="card-toggle1">
+                <div class="card">
                     <img id="img_toggle1" src="assets/img/recipe-card-1.png" class="card-img-top" alt="Panqueques">
                     <div class="card-body text-left">
-                        <h5 class="card-title font-weight-bold">PANQUEQUES CON MANJAR Y CREMA</h5>
+                        <h5 class="card-title font-weight-bold"  id="card-toggle1">PANQUEQUES CON MANJAR Y CREMA</h5>
                         <p id="p_text1" class="card-text">Mus enim elementum dignissim class eleifend justo, ut nunc
                             magnis est
                             vulputate nostra, blandit erat luctus</p>
@@ -242,10 +237,10 @@
                 </div>
             </div>
             <div class="col-md-4 mb-4">
-                <div class="card" id="card-toggle3">
+                <div class="card">
                     <img id="img_toggle3" src="assets/img/recipe-card-3.png" class="card-img-top" alt="Plateada">
                     <div class="card-body text-left">
-                        <h5 class="card-title font-weight-bold">PLATEADA</h5>
+                        <h5 class="card-title font-weight-bold" id="card-toggle3">PLATEADA</h5>
                         <p id="p_text3" class="card-text">Cubilia elementum posuere arcu rhoncus egestas lectus, diam
                             aliquam laoreet
                             ac eleifend risus, urna auctor inceptos mattis dapibus.</p>
@@ -262,8 +257,8 @@
             <h4 class=" text-white">y obtén las mejores recetas que tenemos en <span class="text-white">Ricomida</span>
             </h4>
             <div class="text-center my-5">
-                <button type="button" class="btn btn-danger btn-outline-light text-white py-2 px-5"
-                    data-toggle="tooltip" data-placement="right" title="Presiona para suscribirte">Empezar</button>
+                <button type="button" class="btn btn-danger text-white py-2 px-5" data-toggle="tooltip"
+                    data-placement="right" title="Presiona para suscribirte">Empezar</button>
             </div>
         </div>
     </section>
