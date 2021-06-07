@@ -72,21 +72,21 @@ $(document).ready(function () {
 
 $(document).ready(function () {
     $("#card-toggle1").click(function () {
-        $("#p_text1").toggle();
-        $("#img_toggle1").toggle();
+        $("#p_text1").toggle(slow);
+        $("#img_toggle1").toggle(slow);
     });
 });
 
 $(document).ready(function () {
     $("#card-toggle2").click(function () {
-        $("#p_text2").toggle();
-        $("#img_toggle2").toggle();
+        $("#p_text2").toggle(slow);
+        $("#img_toggle2").toggle(slow);
     });
 });
 
 $(document).ready(function () {
     $("#card-toggle3").click(function () {
-        $("#p_text3").toggle();
-        $("#img_toggle3").toggle();
+        $("#p_text3").toggle(slow);
+        $("#img_toggle3").toggle(slow);
     });
 });
